@@ -11,9 +11,12 @@ def operaciones(oper):
     elif oper == 'suma':
         divi= fnum / fnum2
         print(divi)
-
+        
+#Introducción:
 nombre = input ("Cómo te llamas?: ")
 print ("Hola", nombre, ", empecemos a operar!")
+
+#Pedir el primer número:
 while True:
     num= input('Introduce un número: ')
     try:
@@ -22,6 +25,8 @@ while True:
     except:
         print ('Asegúrate que sea un valor numérico')
         continue
+
+#Pedir el segundo número:
 while True:
     num2= input('Ahora introduce otro número: ')
     try:
@@ -30,6 +35,8 @@ while True:
     except:
         print ('Asegúrate que sea un valor numérico')
         continue
+        
+#Pedir la operación (que tirará de la función de arriba):
 while True:
     signo= input ('Introduce un símbolo matemático ( + - / *): ')
     if signo is '+':
