@@ -1,18 +1,16 @@
-def suma():
-    sum= fnum + fnum2
-    print(sum)
-
-def resta():
-    rest= fnum - fnum2
-    print (rest)
-
-def multiplicacion():
-    mult= fnum * fnum2
-    print (mult)
-
-def division():
-    divi= fnum / fnum2
-    print (divi)
+def operaciones(oper):
+    if oper == 'suma':
+        sum= fnum + fnum2
+        print(sum)
+    elif oper == 'resta':
+        rest= fnum - fnum2
+        print(rest)
+    elif oper == 'multiplicacion':
+        mult= fnum * fnum2
+        print(mult)
+    elif oper == 'suma':
+        divi= fnum / fnum2
+        print(divi)
 
 nombre = input ("Cómo te llamas?: ")
 print ("Hola", nombre, ", empecemos a operar!")
@@ -35,16 +33,16 @@ while True:
 while True:
     signo= input ('Introduce un símbolo matemático ( + - / *): ')
     if signo is '+':
-        suma()
+        operaciones('suma')
         break
     elif signo is "-":
-        resta()
+        operaciones('resta')
         break
     elif signo is "*":
-        multiplicacion()
+        operaciones('multiplicacion')
         break
     elif signo is "/":
-        division()
+        operaciones('division')
         break
     else:
         print ('Vuelve a escribir el símbolo bien')
