@@ -1,17 +1,18 @@
+# -*- coding: utf-8 -*-
+
 def operaciones(oper):
     if oper == 'suma':
-        sum= fnum + fnum2
+        sum = fnum + fnum2
         print(sum)
     elif oper == 'resta':
-        rest= fnum - fnum2
-        print(rest)
+        print(fnum - fnum2)
     elif oper == 'multiplicacion':
         mult= fnum * fnum2
         print(mult)
     elif oper == 'suma':
         divi= fnum / fnum2
         print(divi)
-        
+
 #Introducción:
 nombre = input ("Cómo te llamas?: ")
 print ("Hola", nombre, ", empecemos a operar!")
@@ -35,7 +36,7 @@ while True:
     except:
         print ('Asegúrate que sea un valor numérico')
         continue
-        
+
 #Pedir la operación (que tirará de la función de arriba):
 while True:
     signo= input ('Introduce un símbolo matemático ( + - / *): ')
