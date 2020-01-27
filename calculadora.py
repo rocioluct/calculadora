@@ -8,7 +8,7 @@ def operaciones(oper):
     elif oper == 'multiplicacion':
         mult= fnum * fnum2
         print(mult)
-    elif oper == 'suma':
+    elif oper == 'division':
         divi= fnum / fnum2
         print(divi)
         
